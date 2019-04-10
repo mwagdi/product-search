@@ -6,6 +6,7 @@ exports[`Product component Renders Product component 1`] = `
 >
   <div
     className="product__wrap"
+    onClick={[Function]}
   >
     <h2
       className="product__title"

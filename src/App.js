@@ -5,6 +5,7 @@ import './assets/scss/app.scss';
 
 import Product from './components/Product';
 import ProductContainer from './containers/ProductContainer';
+import ModalContainer from './containers/ModalContainer';
 
 class App extends Component{
     state = {
@@ -69,7 +70,7 @@ class App extends Component{
                     ))}
                 </div>}
                 {modal &&
-                <h3>Modal</h3>}
+                <ModalContainer />}
             </Fragment>
         )
     }

@@ -9,11 +9,9 @@ describe("Product Container", () => {
     let wrapper;
     const mockStore = configureStore();
     let store;
-    const initialState = {
-        // products: []
-    }
+    
     beforeEach(() => {
-        store = mockStore(initialState)
+        store = mockStore({})
         wrapper = shallow(<Provider store={store}><ProductContainer /></Provider>);
         
     })
