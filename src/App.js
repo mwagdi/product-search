@@ -2,6 +2,8 @@ import React,{ Component,Fragment } from 'react';
 import axios from 'axios';
 import products from './products.csv';
 
+import Product from './components/Product';
+
 class App extends Component{
     state = {
         results: [],
@@ -47,9 +49,7 @@ class App extends Component{
                     if(i < (current * 100) && i > ((current - 1) * 100)){
                         let index = i - ((current - 1) * 100);
                         return (
-                            <div key={`pr${index}`}>
-                                {product.title}
-                            </div>
+                            <Product product={product} key={`pr${index}`} />
                         )
                     }
                 })}
