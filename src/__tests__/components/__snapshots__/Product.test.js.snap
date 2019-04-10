@@ -4,42 +4,46 @@ exports[`Product component Renders Product component 1`] = `
 <div
   className="product"
 >
-  <h2
-    className="product__title"
+  <div
+    className="product__wrap"
   >
-    Product Title
-  </h2>
-  <img
-    alt="Product Title"
-    src="dummy.jpg"
-  />
-  <ul
-    className="product__details"
-  >
-    <li
-      className="product__details_item"
+    <h2
+      className="product__title"
     >
-      Gtin: 
-      gtinExample
-    </li>
-    <li
-      className="product__details_item"
+      Product Title
+    </h2>
+    <img
+      alt="Product Title"
+      src="dummy.jpg"
+    />
+    <ul
+      className="product__details"
     >
-      Gender: 
-      female
-    </li>
-    <li
-      className="product__details_item"
-    >
-      Price: 
-      39.95 EUR
-    </li>
-    <li
-      className="product__details_item"
-    >
-      Sale Price: 
-      39.95 EUR
-    </li>
-  </ul>
+      <li
+        className="product__details_item"
+      >
+        Gtin: 
+        gtinExample
+      </li>
+      <li
+        className="product__details_item"
+      >
+        Gender: 
+        female
+      </li>
+      <li
+        className="product__details_item"
+      >
+        Price: 
+        39.95 EUR
+      </li>
+      <li
+        className="product__details_item"
+      >
+        Sale Price: 
+        39.95 EUR
+      </li>
+    </ul>
+  </div>
 </div>
 `;

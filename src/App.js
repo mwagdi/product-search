@@ -1,6 +1,7 @@
 import React,{ Component,Fragment } from 'react';
 import axios from 'axios';
 import products from './products.csv';
+import './assets/scss/app.scss';
 
 import Product from './components/Product';
 
@@ -38,25 +39,31 @@ class App extends Component{
         const { results,current,pages } = this.state;
         return(
             <Fragment>
-                <h1>Products Search</h1>
-                <div className="input-container">
+                <h1 className="text-center">Products Search</h1>
+                <div className="input-container text-center">
                     <input
                     onChange={this.handleInputChange}
                     placeholder="Search for products..."
                     type="text" />
                 </div>
-                {results.map((product,i) => {
-                    if(i < (current * 100) && i > ((current - 1) * 100)){
-                        let index = i - ((current - 1) * 100);
-                        return (
-                            <Product product={product} key={`pr${index}`} />
-                        )
-                    }
-                })}
+                <div className="flex-container flex-wrap">
+                    {results.map((product,i) => {
+                        if(i < ((current * 100)+1) && i > ((current - 1) * 100)){
+                            let index = i - ((current - 1) * 100);
+                            return (
+                                <Product product={product} key={`pr${index}`} />
+                            )
+                        }
+                    })}
+                </div>
                 {pages > 1 &&
-                <div className="pagination">
+                <div className="pagination flex-container justify-center">
                     {Array.from(Array(pages).keys()).map(page => (
-                        <a onClick={() => this.setState({current: page + 1})} key={page + 1}>{page + 1}</a>
+                        <button
+                        className={`pagination__item ${current === page + 1 ? 'active' : ''}`}
+                        onClick={() => this.setState({current: page + 1})} key={page + 1}>
+                            {page + 1}
+                        </button>
                     ))}
                 </div>}
             </Fragment>

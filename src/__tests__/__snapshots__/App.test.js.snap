@@ -2,11 +2,13 @@
 
 exports[`App component Renders App component 1`] = `
 <Fragment>
-  <h1>
+  <h1
+    className="text-center"
+  >
     Products Search
   </h1>
   <div
-    className="input-container"
+    className="input-container text-center"
   >
     <input
       onChange={[Function]}
@@ -14,5 +16,8 @@ exports[`App component Renders App component 1`] = `
       type="text"
     />
   </div>
+  <div
+    className="flex-container flex-wrap"
+  />
 </Fragment>
 `;
