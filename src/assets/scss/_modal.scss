@@ -7,5 +7,22 @@
     background: rgba(0, 0, 0, 0.65);
     &__wrap{
         background: white;
+        width: 800px;
+    }
+    &__header{
+        padding: 1em;
+    }
+    &__close{
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 3em;
+        color: #595959;
+        opacity: 0.5;
+        margin-left: 1em;
+        transition: all 0.2s;
+        &:hover{
+            opacity: 1;
+        }
     }
 }

@@ -19,6 +19,12 @@ html,body{
 .justify-center{
     justify-content: center;
 }
+.align-center{
+    align-items: center;
+}
+.flex-grow{
+    flex-grow: 1;
+}
 img{
     max-width: 100%;
 }

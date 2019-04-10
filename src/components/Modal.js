@@ -21,15 +21,21 @@ class Modal extends Component{
     }
     render(){
         const { product,closeModal } = this.props;
+        const images = product.additional_image_link.split(",");
         return (
-            <div className="modal">
+            <div className="modal flex-container justify-center align-center">
                 <div
                 ref={this.modalRef}
                 className="modal__wrap">
-                    <h3>Modal</h3>
-                    <button
-                    onClick={() => closeModal()}
-                    className="modal__close">&times;</button>
+                    <div className="modal__header flex-container align-center">
+                        <h3 className="modal__title flex-grow">{product.title}</h3>
+                        <button
+                        onClick={() => closeModal()}
+                        className="modal__close">&times;</button>
+                    </div>
+                    <div className="modal__body">
+                        {images.map((image,i) => <img key={i} src={image} />)}
+                    </div>
                 </div>
             </div>
         )

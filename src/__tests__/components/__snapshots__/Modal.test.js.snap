@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component Renders Modal component 1`] = `
+<div
+  className="modal flex-container justify-center align-center"
+>
+  <div
+    className="modal__wrap"
+  >
+    <div
+      className="modal__header flex-container align-center"
+    >
+      <h3
+        className="modal__title flex-grow"
+      >
+        Product Title
+      </h3>
+      <button
+        className="modal__close"
+        onClick={[Function]}
+      >
+        ×
+      </button>
+    </div>
+    <div
+      className="modal__body"
+    >
+      <img
+        key="0"
+        src="*****"
+      />
+      <img
+        key="1"
+        src="*****"
+      />
+      <img
+        key="2"
+        src="*****"
+      />
+    </div>
+  </div>
+</div>
+`;
