@@ -13,6 +13,9 @@ html,body{
 .flex-container{
     display: flex;
 }
+.flex-column{
+    flex-direction: column;
+}
 .flex-wrap{
     flex-wrap: wrap;
 }

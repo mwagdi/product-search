@@ -1,0 +1,33 @@
+.gallery{
+    &__select{
+        &_item{
+            width: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 35%;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.6);
+                transition: all 0.2s;
+            }
+            &:hover{
+                &:after{
+                    opacity: 0;
+                }
+            }
+            &.active{
+                &:after{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React,{ Component } from 'react';
+import Gallery from './Gallery';
 
 class Modal extends Component{
     constructor(props) {
@@ -34,7 +35,7 @@ class Modal extends Component{
                         className="modal__close">&times;</button>
                     </div>
                     <div className="modal__body">
-                        {images.map((image,i) => <img key={i} src={image} />)}
+                        <Gallery images={images} />
                     </div>
                 </div>
             </div>

@@ -5,9 +5,12 @@
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.65);
+    overflow-y: scroll;
     &__wrap{
         background: white;
         width: 800px;
+        position: absolute;
+        top: 0;
     }
     &__header{
         padding: 1em;

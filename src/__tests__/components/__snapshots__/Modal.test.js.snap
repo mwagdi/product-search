@@ -25,17 +25,14 @@ exports[`Modal component Renders Modal component 1`] = `
     <div
       className="modal__body"
     >
-      <img
-        key="0"
-        src="*****"
-      />
-      <img
-        key="1"
-        src="*****"
-      />
-      <img
-        key="2"
-        src="*****"
+      <Gallery
+        images={
+          Array [
+            "*****",
+            "*****",
+            "*****",
+          ]
+        }
       />
     </div>
   </div>

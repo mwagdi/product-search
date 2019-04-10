@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gallery component Renders Gallery component 1`] = `
+<div
+  className="gallery flex-container"
+>
+  <div
+    className="gallery__viewer"
+  >
+    <img
+      alt="gallery view"
+      src="dummy.jpg"
+    />
+  </div>
+  <div
+    className="gallery__select flex-direction flex-column"
+  >
+    <div
+      className="gallery__select_item active"
+      key="0"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(dummy.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery__select_item "
+      key="1"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(dummy1.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery__select_item "
+      key="2"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(dummy2.jpg)",
+        }
+      }
+    />
+    <div
+      className="gallery__select_item "
+      key="3"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundImage": "url(dummy3.jpg)",
+        }
+      }
+    />
+  </div>
+</div>
+`;
