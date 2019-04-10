@@ -3,7 +3,16 @@
 exports[`App component Renders App component 1`] = `
 <Fragment>
   <h1>
-    Hello
+    Products Search
   </h1>
+  <div
+    className="input-container"
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search for products..."
+      type="text"
+    />
+  </div>
 </Fragment>
 `;
