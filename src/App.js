@@ -4,6 +4,7 @@ import products from './products.csv';
 import './assets/scss/app.scss';
 
 import Product from './components/Product';
+import ProductContainer from './containers/ProductContainer';
 
 class App extends Component{
     state = {
@@ -37,6 +38,7 @@ class App extends Component{
     }
     render(){
         const { results,current,pages } = this.state;
+        const { modal } = this.props;
         return(
             <Fragment>
                 <h1 className="text-center">Products Search</h1>
@@ -51,7 +53,7 @@ class App extends Component{
                         if(i < ((current * 100)+1) && i > ((current - 1) * 100)){
                             let index = i - ((current - 1) * 100);
                             return (
-                                <Product product={product} key={`pr${index}`} />
+                                <ProductContainer product={product} key={`pr${index}`} />
                             )
                         }
                     })}
@@ -66,6 +68,8 @@ class App extends Component{
                         </button>
                     ))}
                 </div>}
+                {modal &&
+                <h3>Modal</h3>}
             </Fragment>
         )
     }

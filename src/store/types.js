@@ -1,2 +1,4 @@
 export const FETCH_PRODUCTS = "FETCH_PRODUCTS";
 export const RECEIVE_PRODUCTS = "RECEIVE_PRODUCTS";
+export const OPEN_MODAL = "OPEN_MODAL";
+export const CLOSE_MODAL = "CLOSE_MODAL";

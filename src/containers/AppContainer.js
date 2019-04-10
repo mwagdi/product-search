@@ -5,7 +5,8 @@ import App from './../App';
 
 const mapStateToProps = state => {
     return {
-        products: state.products
+        products: state.products,
+        modal: state.modal.open
     }
 }
 
