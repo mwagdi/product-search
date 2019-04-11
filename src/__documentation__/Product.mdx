@@ -1,0 +1,28 @@
+---
+name: Product
+menu: Components
+route: /components/Product
+---
+
+import { Playground, Props } from 'docz'
+import Product from '../components/Product.js'
+import './../assets/scss/app.scss'
+
+# Product
+
+## Props
+<Props of={Product} />
+
+## Basic usage
+<Playground>
+  <Product
+  clickable={false}
+  product={{
+    title: "Product Title",
+    gtin: "000000",
+    gender: "male",
+    price: "29.99 EUR",
+    sale_price: "19.99 EUR",
+    image_link: "http://lp.weekday.com/app003prod?set=source[02_0514898_001_001],type[PRODUCT],device[hdpi],quality[80],ImageVersion[2019092]&call=url[file:/product/style]"
+  }} />
+</Playground>

@@ -1,8 +1,13 @@
 import React,{ Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Gallery extends Component{
     state = {
         current: 0
+    }
+    static propTypes = {
+        /** Array of image URLs */
+        images: PropTypes.array.isRequired
     }
     render(){
         const { images } = this.props;

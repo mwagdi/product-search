@@ -1,0 +1,23 @@
+---
+name: Gallery
+menu: Components
+route: /components/Gallery
+---
+
+import { Playground, Props } from 'docz'
+import Gallery from '../components/Gallery.js'
+import './../assets/scss/app.scss'
+
+# Gallery
+
+## Props
+<Props of={Gallery} />
+
+## Basic usage
+<Playground>
+  <Gallery images={[
+    "https://sspride.org/wp-content/uploads/2017/03/image-placeholder-500x500-300x300.jpg",
+    "https://sspride.org/wp-content/uploads/2017/03/image-placeholder-500x500-300x300.jpg",
+    "https://sspride.org/wp-content/uploads/2017/03/image-placeholder-500x500-300x300.jpg"
+    ]} />
+</Playground>

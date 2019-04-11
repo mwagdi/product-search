@@ -1,0 +1,246 @@
+{
+  "config": {
+    "title": "CSS Sass",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-",
+    "plugins": [
+      {}
+    ]
+  },
+  "props": [
+    {
+      "key": "src/App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [
+            {
+              "name": "handleInputChange",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "e",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "src/components/Gallery.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gallery",
+          "methods": [],
+          "actualName": "Gallery"
+        }
+      ]
+    },
+    {
+      "key": "src/components/Modal.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Modal",
+          "methods": [
+            {
+              "name": "handleClick",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "e",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Modal"
+        }
+      ]
+    },
+    {
+      "key": "src/components/Product.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "src\\components\\Gallery.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Gallery",
+          "methods": [],
+          "actualName": "Gallery",
+          "props": {
+            "images": {
+              "type": {
+                "name": "array"
+              },
+              "required": true,
+              "description": "Array of image URLs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src\\components\\Product.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Product",
+          "methods": [],
+          "actualName": "Product",
+          "props": {
+            "product": {
+              "type": {
+                "name": "shape",
+                "value": {
+                  "gtin": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "title": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "gender": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "image_link": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "price": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "sale_price": {
+                    "name": "string",
+                    "required": true
+                  },
+                  "additional_image_link": {
+                    "name": "string",
+                    "required": false
+                  }
+                }
+              },
+              "required": true,
+              "description": "Product object"
+            },
+            "clickable": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "Whether or not click event triggers action",
+              "defaultValue": {
+                "value": "true",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "src/__documentation__/1-Hello.mdx",
+      "value": {
+        "route": "/",
+        "name": "Hello",
+        "id": "fd5aad6fde99e8183246077a7f9bbcea",
+        "filepath": "src/__documentation__/1-Hello.mdx",
+        "link": "",
+        "slug": "src-documentation-1-hello",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "hello-this-is-the-documentation-for-the-product-search-app",
+            "depth": 1,
+            "value": "Hello! This is the documentation for the Product Search App!"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/__documentation__/Gallery.mdx",
+      "value": {
+        "name": "Gallery",
+        "menu": "Components",
+        "route": "/components/Gallery",
+        "id": "c075f82a774f83b21a5ccf29653bb14a",
+        "filepath": "src/__documentation__/Gallery.mdx",
+        "link": "",
+        "slug": "src-documentation-gallery",
+        "headings": [
+          {
+            "slug": "gallery",
+            "depth": 1,
+            "value": "Gallery"
+          },
+          {
+            "slug": "props",
+            "depth": 2,
+            "value": "Props"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/__documentation__/Product.mdx",
+      "value": {
+        "name": "Product",
+        "menu": "Components",
+        "route": "/components/Product",
+        "id": "6c7318fea87e4d1a90e157937a28e3eb",
+        "filepath": "src/__documentation__/Product.mdx",
+        "link": "",
+        "slug": "src-documentation-product",
+        "headings": [
+          {
+            "slug": "product",
+            "depth": 1,
+            "value": "Product"
+          },
+          {
+            "slug": "props",
+            "depth": 2,
+            "value": "Props"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    }
+  ]
+}

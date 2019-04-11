@@ -3,7 +3,6 @@ import axios from 'axios';
 import products from './products.csv';
 import './assets/scss/app.scss';
 
-import Product from './components/Product';
 import ProductContainer from './containers/ProductContainer';
 import ModalContainer from './containers/ModalContainer';
 
